@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'BillboardChartController@index');
+Route::get('/show-chart', 'BillboardChartController@showChart');
