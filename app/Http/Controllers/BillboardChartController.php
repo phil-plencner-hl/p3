@@ -8,10 +8,11 @@ class BillboardChartController extends Controller
 {
     public function index()
     {
-        return 'Display the Billboard chart form.';
+        return view('billboardcharts.index');
     }
 
     public function showChart()
     {
+        return view('billboardcharts.showchart');
     }
 }
