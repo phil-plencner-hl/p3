@@ -11,5 +11,9 @@
 |
 */
 
+# Displaying the chart form
 Route::get('/', 'BillboardChartController@index');
-Route::get('/show-chart', 'BillboardChartController@showChart');
+
+# Processing the chart form
+Route::get('/chart-process', 'BillboardChartController@chartProcess');
+
