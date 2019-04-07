@@ -9,9 +9,10 @@
     <p>Select your options below to display a particular Billboard Top Album chart.</p>
 
     <form method='GET' action='/chart-process'>
+        <div class='details'>* Required fields</div>
         <div class="row">
             <div class="col-sm-4">
-                <label class='bold-label'>Type in number of results
+                <label class='bold-label'>* Number of results
                     <small id="numResultsHelp"
                            class="x-small form-text text-muted">Number of results must be between 1 and 10.
                     </small>
@@ -25,7 +26,7 @@
                 @include('includes.error-field', ['fieldName' => 'numResults'])
             </div>
             <div class="col-sm-4">
-                <label class='bold-label'>Select Year
+                <label class='bold-label'>* Year
                     <select name='year' id='year'>
                         <option value=''>Choose one...</option>
                         <option value='2002' {{ (old('year') == '2002' || $year == '2002') ? 'selected' : '' }}>2002</option>
@@ -37,7 +38,7 @@
             </div>
             <div class="col-sm-4">
                 <fieldset class='radios'>
-                    <legend>Select Billboard Chart</legend>
+                    <legend>* Billboard Chart</legend>
                     <ul id='chart-radios' class='radios'>
                         <li><label><input type='radio'
                                           name='chart'
