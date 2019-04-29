@@ -1,7 +1,7 @@
 ## P3 Peer Review
 
 + Reviewer's name: Phil Plencner 
-+ Reviwee's name: Patrick Q.
++ Reviwee's name: Gary H.
 + URL to Reviewe's P3 Github Repo URL: *<https://github.com/tealuxe/p3>*
 
 ## 1. Interface
